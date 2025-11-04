@@ -1,0 +1,203 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color scheme for dark navy-violet-black gradient portfolio */
+  --background: oklch(0.12 0.02 260);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.15 0.03 260);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.15 0.03 260);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.75 0.15 195);
+  --primary-foreground: oklch(0.12 0.02 260);
+  --secondary: oklch(0.25 0.04 270);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.25 0.04 270);
+  --muted-foreground: oklch(0.65 0.02 260);
+  --accent: oklch(0.75 0.15 195);
+  --accent-foreground: oklch(0.12 0.02 260);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.25 0.04 270);
+  --input: oklch(0.25 0.04 270);
+  --ring: oklch(0.75 0.15 195);
+  --chart-1: oklch(0.75 0.15 195);
+  --chart-2: oklch(0.65 0.18 280);
+  --chart-3: oklch(0.55 0.2 260);
+  --chart-4: oklch(0.7 0.12 240);
+  --chart-5: oklch(0.6 0.16 220);
+  --radius: 0.75rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+
+  /* Custom colors for portfolio */
+  --navy: oklch(0.12 0.02 260);
+  --violet: oklch(0.35 0.15 280);
+  --cyan: oklch(0.75 0.15 195);
+}
+
+.dark {
+  --background: oklch(0.12 0.02 260);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.15 0.03 260);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.15 0.03 260);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.75 0.15 195);
+  --primary-foreground: oklch(0.12 0.02 260);
+  --secondary: oklch(0.25 0.04 270);
+  --secondary-foreground: oklch(0.98 0 0);
+  --muted: oklch(0.25 0.04 270);
+  --muted-foreground: oklch(0.65 0.02 260);
+  --accent: oklch(0.75 0.15 195);
+  --accent-foreground: oklch(0.12 0.02 260);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.25 0.04 270);
+  --input: oklch(0.25 0.04 270);
+  --ring: oklch(0.75 0.15 195);
+  --chart-1: oklch(0.75 0.15 195);
+  --chart-2: oklch(0.65 0.18 280);
+  --chart-3: oklch(0.55 0.2 260);
+  --chart-4: oklch(0.7 0.12 240);
+  --chart-5: oklch(0.6 0.16 220);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  /* Added Space Grotesk font for modern technical aesthetic */
+  --font-sans: "Space Grotesk", "Inter", "Geist", system-ui, sans-serif;
+  --font-mono: "Geist Mono", "Geist Mono Fallback", monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  /* Custom portfolio colors */
+  --color-navy: var(--navy);
+  --color-violet: var(--violet);
+  --color-cyan: var(--cyan);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom gradient backgrounds for portfolio sections */
+@layer utilities {
+  .bg-gradient-to-br {
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+  }
+
+  .from-navy {
+    --tw-gradient-from: oklch(0.12 0.02 260);
+    --tw-gradient-to: oklch(0.12 0.02 260 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  }
+
+  .via-violet {
+    --tw-gradient-to: oklch(0.35 0.15 280 / 0);
+    --tw-gradient-stops: var(--tw-gradient-from), oklch(0.35 0.15 280), var(--tw-gradient-to);
+  }
+
+  .to-black {
+    --tw-gradient-to: oklch(0.08 0 0);
+  }
+
+  .bg-navy {
+    background-color: oklch(0.12 0.02 260);
+  }
+
+  .bg-navy\/30 {
+    background-color: oklch(0.12 0.02 260 / 0.3);
+  }
+
+  .bg-navy\/80 {
+    background-color: oklch(0.12 0.02 260 / 0.8);
+  }
+
+  .text-navy {
+    color: oklch(0.12 0.02 260);
+  }
+
+  .bg-cyan {
+    background-color: oklch(0.75 0.15 195);
+  }
+
+  .bg-cyan\/10 {
+    background-color: oklch(0.75 0.15 195 / 0.1);
+  }
+
+  .bg-cyan\/90 {
+    background-color: oklch(0.75 0.15 195 / 0.9);
+  }
+
+  .text-cyan {
+    color: oklch(0.75 0.15 195);
+  }
+
+  .text-cyan\/80 {
+    color: oklch(0.75 0.15 195 / 0.8);
+  }
+
+  .border-cyan {
+    border-color: oklch(0.75 0.15 195);
+  }
+
+  .border-cyan\/30 {
+    border-color: oklch(0.75 0.15 195 / 0.3);
+  }
+}
