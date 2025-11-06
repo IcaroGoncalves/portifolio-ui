@@ -61,33 +61,66 @@ const content = {
         methodologies: ["Scrum", "Kanban", "CI/CD", "ITIL"],
       },
     },
-    experience: {
-      title: "Experiência Profissional",
+experiences: {
+  title: "Experiência Profissional",
+  items: [
+    {
       role: "Analista de Sistemas Júnior",
-      company: "Fundação de Amparo e Desenvolvimento da Pesquisa (SEFA)",
+      company: "Fundação de Amparo e Desenvolvimento da Pesquisa – SEFA",
+      location: "Belém, PA",
       period: "Fev 2024 – Atual",
       responsibilities: [
-        "Desenvolvimento de APIs REST com Java 8+ , Spring Boot 3",
-        "Integração com Apache Kafka e monitoramento via Grafana",
-        "Deploy contínuo com Docker, Jenkins e Argo CD",
-        "Implementação de testes unitários e integração contínua",
+        "Desenvolvimento e manutenção de APIs REST e microsserviços com Java 8+, Spring Boot e Spring Data.",
+        "Implementação de testes unitários e de integração com JUnit 5 e Mockito.",
+        "Consultas SQL e PL/SQL otimizadas (Oracle/PostgreSQL) com foco em performance.",
+        "Evolução de sistemas legados (Java/JSP) para arquiteturas modernas com Spring e Kafka.",
+        "Versionamento com Git e qualidade com SonarQube; atuação em squads ágeis (Scrum)."
       ],
       projectsTitle: "Projetos de Destaque",
       projects: [
-        {
-          name: "Sistema Sua Casa",
-          description: "Emissão digital de comprovantes oficiais",
-        },
-        {
-          name: "DO-e/SEFA",
-          description: "Refatoração de API modular para consultas de documentos",
-        },
-        {
-          name: "Plataforma de Crédito Fiscal",
-          description: "API de deduções e transferências com Kafka + MinIO",
-        },
-      ],
+        { name: "Sistema Sua Casa", description: "API e front-end (Java 8 + AngularJS) para emissão automatizada de comprovantes." },
+        { name: "DO-e/SEFA", description: "Refatoração da API de buscas (Java 17 + Spring Boot) para mais escalabilidade." },
+        { name: "Nova Plataforma de Crédito Fiscal", description: "MVP (Java 20, Angular 16, Kafka) com integração a MinIO para auditoria de arquivos." }
+      ]
     },
+    {
+      role: "Analista de Sistemas – Trainee",
+      company: "Fundação de Amparo e Desenvolvimento da Pesquisa – SEFA",
+      location: "Belém, PA",
+      period: "Out 2022 – Fev 2024",
+      responsibilities: [
+        "Sustentação de sistemas críticos em Java, JSP e VB6.",
+        "Suporte N2 com SQL/PLSQL avançado; diagnóstico de incidentes e hotfixes.",
+        "Otimização de procedures e funções SQL para redução de tempo de execução.",
+        "Apoio à migração de Java 7 para Java 8 com refatoração e validação de código."
+      ]
+    },
+    {
+      role: "Estágio em Sustentação",
+      company: "Secretaria de Estado da Fazenda do Pará – SEFA",
+      location: "Belém, PA",
+      period: "Ago 2022 – Out 2022",
+      responsibilities: [
+        "Correção de bugs e suporte a sistemas de arrecadação estadual (Oracle).",
+        "Resolução de falhas em aplicações fiscais e manutenção de bases de dados.",
+        "Apoio a equipes de desenvolvimento e sustentação seguindo regras de negócio tributárias."
+      ]
+    },
+    {
+      role: "Estágio em Suporte de TI",
+      company: "Secretaria de Estado da Fazenda do Pará – SEFA",
+      location: "Belém, PA",
+      period: "Fev 2020 – Ago 2022",
+      responsibilities: [
+        "Atendimento de suporte técnico e infraestrutura (GLPI) a servidores e usuários.",
+        "Formatação e configuração de Windows em domínio institucional.",
+        "Projeto de substituição de +1500 computadores com imagem padronizada.",
+        "Montagem e configuração de equipamentos para eventos e reuniões oficiais."
+      ]
+    }
+  ]
+},
+
     education: {
       title: "Formação Acadêmica",
       degree: "Bacharelado em Sistemas de Informação",
@@ -164,33 +197,67 @@ const content = {
         methodologies: ["Scrum", "Kanban", "CI/CD", "ITIL"],
       },
     },
-    experience: {
-      title: "Professional Experience",
+// EN
+experiences: {
+  title: "Professional Experience",
+  items: [
+    {
       role: "Junior Systems Analyst",
-      company: "Fundação de Amparo e Desenvolvimento da Pesquisa (SEFA)",
+      company: "Fundação de Amparo e Desenvolvimento da Pesquisa – SEFA",
+      location: "Belém, PA",
       period: "Feb 2024 – Present",
       responsibilities: [
-        "Development of REST APIs with Java 21 + Spring Boot 3",
-        "Kafka-based integration and monitoring via Grafana",
-        "Continuous deployment with Docker, Jenkins, and Argo CD",
-        "Unit testing and CI integration using JUnit 5",
+        "Develop and maintain REST APIs and microservices with Java 8+, Spring Boot, and Spring Data.",
+        "Implement unit and integration tests using JUnit 5 and Mockito.",
+        "Optimize SQL/PLSQL queries (Oracle/PostgreSQL) for performance.",
+        "Modernize legacy Java/JSP systems to Spring- and Kafka-based architectures.",
+        "Version control with Git and quality gates with SonarQube; Agile squads (Scrum)."
       ],
       projectsTitle: "Key Projects",
       projects: [
-        {
-          name: "Sistema Sua Casa / Sua Casa System",
-          description: "Digital issuance of official receipts",
-        },
-        {
-          name: "DO-e/SEFA",
-          description: "Modular API refactor for document searches",
-        },
-        {
-          name: "Tax Credit Platform",
-          description: "Deductions and transfers API with Kafka + MinIO",
-        },
-      ],
+        { name: "Sistema Sua Casa / Sua Casa System", description: "API and front-end (Java 8 + AngularJS) for automated receipt issuance." },
+        { name: "DO-e/SEFA", description: "Search API refactor (Java 17 + Spring Boot) to increase scalability." },
+        { name: "New Tax Credit Platform", description: "MVP (Java 20, Angular 16, Kafka) with MinIO integration for file auditing." }
+      ]
     },
+    {
+      role: "Systems Analyst – Trainee",
+      company: "Fundação de Amparo e Desenvolvimento da Pesquisa – SEFA",
+      location: "Belém, PA",
+      period: "Oct 2022 – Feb 2024",
+      responsibilities: [
+        "Sustained critical systems in Java, JSP, and VB6.",
+        "L2 support with advanced SQL/PLSQL; incident diagnostics and production hotfixes.",
+        "Optimized SQL procedures/functions to reduce execution time.",
+        "Supported migration from Java 7 to Java 8 with code refactoring and validation."
+      ]
+    },
+    {
+      role: "Sustaining Engineering Intern",
+      company: "Secretaria de Estado da Fazenda do Pará – SEFA",
+      location: "Belém, PA",
+      period: "Aug 2022 – Oct 2022",
+      responsibilities: [
+        "Bug fixes and support for state revenue systems (Oracle).",
+        "Resolved failures in fiscal applications and maintained databases.",
+        "Supported dev/sustainment teams following tax business rules."
+      ]
+    },
+    {
+      role: "IT Support Intern",
+      company: "Secretaria de Estado da Fazenda do Pará – SEFA",
+      location: "Belém, PA",
+      period: "Feb 2020 – Aug 2022",
+      responsibilities: [
+        "Technical support & infrastructure (GLPI) for staff and users.",
+        "Windows imaging and domain configuration.",
+        "Replaced 1500+ desktops using standardized images.",
+        "Set up AV gear for official events and hybrid meetings."
+      ]
+    }
+  ]
+},
+
     education: {
       title: "Education",
       degree: "Bachelor's Degree in Information Systems",
@@ -362,41 +429,61 @@ export default function Portfolio() {
       </section>
 
       {/* Experience Section */}
-      <section id="experience" className="border-t border-white/10 bg-navy/30 py-20">
-        <div className="container mx-auto px-6">
-          <div className="mx-auto max-w-4xl">
-            <h2 className="mb-12 text-balance text-3xl font-bold md:text-4xl">{t.experience.title}</h2>
+      {/* Experience Section */}
+<section id="experience" className="border-t border-white/10 bg-navy/30 py-20">
+  <div className="container mx-auto px-6">
+    <div className="mx-auto max-w-4xl">
+      <h2 className="mb-12 text-balance text-3xl font-bold md:text-4xl">
+        {t.experiences.title}
+      </h2>
 
-            <div className="mb-8 border-l-2 border-cyan pl-6">
-              <div className="mb-2 flex flex-wrap items-baseline gap-2">
-                <h3 className="text-xl font-semibold">{t.experience.role}</h3>
-                <span className="text-slate-400">—</span>
-                <span className="text-slate-300">{t.experience.company}</span>
-              </div>
-              <p className="mb-4 text-sm text-cyan">{t.experience.period}</p>
+      <div className="space-y-10">
+        {t.experiences.items.map((exp, i) => (
+          <div key={i} className="border-l-2 border-cyan pl-6">
+            <div className="mb-2 flex flex-wrap items-baseline gap-2">
+              <h3 className="text-xl font-semibold">{exp.role}</h3>
+              <span className="text-slate-400">—</span>
+              <span className="text-slate-300">{exp.company}</span>
+            </div>
 
-              <ul className="mb-6 space-y-2 text-slate-300">
-                {t.experience.responsibilities.map((resp, idx) => (
+            <p className="mb-2 text-sm text-cyan">
+              {exp.period}{exp.location ? ` · ${exp.location}` : ""}
+            </p>
+
+            {/* Responsabilidades */}
+            {Array.isArray(exp.responsibilities) && exp.responsibilities.length > 0 && (
+              <ul className="mb-4 space-y-2 text-slate-300">
+                {exp.responsibilities.map((resp: string, idx: number) => (
                   <li key={idx} className="flex gap-2">
                     <span className="text-cyan">•</span>
                     <span className="text-pretty">{resp}</span>
                   </li>
                 ))}
               </ul>
+            )}
 
-              <h4 className="mb-4 font-semibold text-cyan">{t.experience.projectsTitle}</h4>
-              <div className="space-y-3">
-                {t.experience.projects.map((project, idx) => (
-                  <div key={idx}>
-                    <p className="font-medium">{project.name}</p>
-                    <p className="text-sm text-slate-400">{project.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
+            {/* Projetos (opcional) */}
+            {Array.isArray(exp.projects) && exp.projects.length > 0 && (
+              <>
+                <h4 className="mb-2 font-semibold text-cyan">
+                  {exp.projectsTitle ?? (lang === "pt" ? "Projetos" : "Projects")}
+                </h4>
+                <div className="space-y-3">
+                  {exp.projects.map((project: any, idx: number) => (
+                    <div key={idx}>
+                      <p className="font-medium">{project.name}</p>
+                      <p className="text-sm text-slate-400">{project.description}</p>
+                    </div>
+                  ))}
+                </div>
+              </>
+            )}
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Education & Certifications */}
       <section className="py-20">
